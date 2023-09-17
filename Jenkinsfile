@@ -21,7 +21,6 @@ pipeline {
         }
         stage('Test e2e') {
             steps {
-               sh 'cd client/admin && npm run dev'
                sh 'cd client/admin && npm run e2e'
             }
         }
